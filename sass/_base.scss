@@ -1,0 +1,21 @@
+body{background: rgb(14,12,12)}
+
+//input{border: 2px solid grey}
+
+a{
+	color: rgb(200,33,172);
+	&:hover{
+		color: rgb(200,200,200);
+	}	
+}
+
+header{height: 4em;}
+
+.container{
+	background: rgb(241,241,255);
+	color:rgb(12,12,12);
+	margin: 0 1em;
+	padding: 0 1em 2em;
+	}
+
+

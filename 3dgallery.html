@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link id="style-css" media="all" type="text/css" href="style.css" rel="stylesheet">
+		<link id="3dstyle-css" media="all" type="text/css" href="3d.css" rel="stylesheet">
+		<style>
+
+/*
+			.thumbnails{list-style:none;margin:0;position:relative;left:-20px;	}
+			.thumbnails li{width: 23%;}*/
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/3d-gallery.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="flex flex-row">
+				<h1>jQuery</h1>
+				<nav>
+					<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="modal.html">Modal</a></li>
+					<li><a href="forms.html">Forms</a></></li>
+					<li><a href="3dgallery.html">3-D Image Gallery</a></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<header><h2>3D Image Gallery</h2></header>
+				<div id="gallery-stage">
+					<div id="gallery-rotate">
+						<div id="gallery-container">
+							<ul class="thumbnails">
+								<li id="img1"><img src="img/thumb-sh1-0.jpg" rel="img/main-sh1.jpg" alt="" title="Stonehenge One"><span>Spot the cosplayer</span></li>
+								<li id="img2"><img src="img/thumb-sh2-0.jpg" rel="img/main-sh2.jpg" alt="" title="Stonehenge Two"><span>A travelling shot</span></li>
+								<li id="img3"><img src="img/thumb-sh3-0.jpg" rel="img/main-sh3.jpg" alt="" title="Stonehenge Three"><span>I wonder</span></li>
+								<li id="img4"><img src="img/thumb-sh4-0.jpg" rel="img/main-sh4.jpg" alt="" title="Stonehenge Four"><span>View from the heelstone</span></li>
+							
+							</ul>
+							<ul class="thumblinks">
+							<li><a href="#img1">Image 1</a></li>
+							<li><a href="#img2">Image 2</a></li>
+							<li><a href="#img3">Image 3</a></li>
+							<li><a href="#img4">Image 4</a></li>
+							
+							</ul>
+						</div><!-- end .3d-container-->
+						<div id="gallery-bottom">
+							<img src="img/main-sh1.jpg">
+						</div>
+					</div><!-- end .3d-rotate-->
+				</div><!-- end .3d-stage-->
+			</main>
+			
+		</div><!-- end container -->
+
+	</body>
+</html>

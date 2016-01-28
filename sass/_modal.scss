@@ -1,0 +1,59 @@
+/*modal*/
+.images>div{
+	border: 3px grey solid;border-radius: 3px;background:rgb(252,252,252);font-size: 0.88rem;width:100%;margin-bottom:1em;
+	&:hover{cursor: pointer;}
+	@media(min-width:22em){
+	    width: 23%;
+	}
+}
+
+img{
+	width: 100%;
+}
+.image-info{height: 3em;}
+.info{text-align:center}
+
+#overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#modal {
+    position:absolute;
+    top: 1px;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    .content {
+        border-radius:8px;
+        background:#fff;
+        padding:30px;
+    }
+
+    img{
+	width:auto;//this line is terribly important for getting this to work in chrome. Otherwise the width:100% on images will stretch the modal
+	//the following could be used
+	//max-height: 38em;//fallback for desktop
+	//max-height: 85vh;//advance on jquery but limited browser support.
+
+	}
+}
+
+#close {
+    position:absolute;
+    top:94%;
+    margin-left:0.4em;
+    background:url(close.png) 0 0 no-repeat;
+    width:24px;
+    height:1.4em;
+    height:1vh;
+    display:block;
+    color: rgba(44,44,24, 0.8);
+  }
+  
+.next{position:relative;left:95%;}
+
