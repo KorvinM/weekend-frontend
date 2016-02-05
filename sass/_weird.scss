@@ -1,0 +1,19 @@
+.flex.content{
+	flex-direction:column;
+	@media(min-width: 50em){
+		flex-direction:row;	
+	}
+	
+	}
+.hide{display:none;visibility:hidden}
+.summary {
+	margin-left:1em;
+	h3{
+	&:hover{cursor:pointer;color:hotpink;}
+	&:after{content:'\00B6';padding-left:0.6em;font-size: 0.88em;}
+	}}
+
+div#summary-output{
+	flex-basis: 38%;
+	@media(min-width:74em){
+}}
