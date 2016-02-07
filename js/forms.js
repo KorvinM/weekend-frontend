@@ -1,7 +1,21 @@
-/*set up a variable for the character count validation*/
-var maxNum = 100;
+/* vanilla js autofocus
+ * from https://www.youtube.com/watch?v=vPf_4fo0zOA
+ */
+
+//http://stackoverflow.com/questions/588040/window-onload-vs-document-onload
+
+window.onload = function(){
+	if (document.forms.form.firstname.value === "") {
+		document.forms.form.firstname.focus();
+		}
+};
+
+
+
 
 $(document).ready(function(){
+	
+
    	/* messing around with focus and blur
    	 *
    	 */
@@ -16,7 +30,7 @@ $(document).ready(function(){
    	/*character count*/
    	/*debugged version from smashing jquery*
    	 * doesnt work
-   	 *
+   	 *nb var maxNum was declared globally
    	$('#status').bind({
 		keypress : function(){
 			var inputText = $(this).val();
@@ -39,6 +53,7 @@ $(document).ready(function(){
 		 * works
 		 */
 		$('#status').keypress(function(e){
+			var maxNum = 100;
 			var inputText = $(this).val();
 			var numChar = inputText.length;
 			var charRemain = numChar - maxNum;
@@ -53,3 +68,4 @@ $(document).ready(function(){
 		);
 		/**/
 });
+
