@@ -32,33 +32,32 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Bv_5Zv5c-Ts" frameborder="0" allowfullscreen></iframe>
 				<div class="summary">
 					<h2>Summary</h2>
-					<h3>Compiler</h3>
+					<h3 class="trigger">Engine</h3>
 					<div class="summary-input">
 						<ul>
-						<li>js code is compiled by the JavaScript Engine</li>
-						<li> JS is executed synchronously</li>
-						<li>compiler creates a fifo stack of <a href="http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/">execution contexts</a></li>
-						<li>1 global context, and infinite new contexts created by function calls</li>
-						<li>each context has two phases: creation () and execution</li>
+						<li>JS code is interpreted and run by the JavaScript Engine, executed synchronously</li>
+						<li>engine creates a fifo stack of <a href="http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/">execution contexts known as the call stack</a></li>
+						<li>1 global context, and new contexts created by function calls. See <a href="https://youtu.be/8aGhZQkoFbQ?t=4m58s">https://youtu.be/8aGhZQkoFbQ?t=4m58s</a></li>
+						<li>each context has a creation and execution phase, and contexts are popped off the top of the stack when they are finished</li>
 						</ul>
 					</div>
-					<h3>Objects</h3>
+					<h3 class="trigger">Objects</h3>
 					<div class="summary-input">
 						<p>A collection of name/value pairs is 'the simplest definition of an object' in js. Values can be further, nested name/value pairs
 					</div>
-					<h3>Scope</h3>
+					<h3 class="trigger">Scope</h3>
 					<div class="summary-input">
 						<p>Understanding the execution context stack and variable environments helps enourmously in grokking the scope chain in js
 					</div>
 					
-					<h3>Asynchronous events</h3>
+					<h3 class="trigger">Asynchronous events</h3>
 					<div class="summary-input">
 						<ul>
 						<li>Alongside the synchronous execution we have the event queue</li>
 						<li>The js engine waits for the execution stack to empty before checking the event queue, periodically   </li>
 						</ul>
 					</div>
-					<h3>Primitives</h3>
+					<h3 class="trigger">Primitives</h3>
 					<div class="summary-input">
 						<ul>
 							<li>undefined</li>
@@ -71,13 +70,13 @@
 					</div>
 						
 					
-					<h3>Operators</h3>
+					<h3 class="trigger">Operators</h3>
 					<div class="summary-input">
 					<p>Operators are actually functions using the infix syntax</p>
 					<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">Operator precedence and associativity</a>
 					<p>Use the strict comparison operators, === and !==, to avoid coercion. See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality comparisons and sameness</a></p>
 					</div>
-					<h3>Clear</h3><div><p></p></div>
+					<span  class="trigger clear">Clear</span>
 				</div><!-- end .summary--><div id="summary-output"></div>
 			</div><!-- end main .flex-->
 			</main>

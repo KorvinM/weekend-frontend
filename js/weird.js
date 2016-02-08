@@ -57,8 +57,12 @@ $(".summary h3").click(function(){
 });
 */
 
-$(".summary h3").click(function(){
+$(".summary .trigger").click(function(){
 	var summaryIn = $(this).next('div').html();	
 	$('#summary-output').empty().html(summaryIn);
+});
+$(".clear").click(function(){
+	
+	//$('#summary-output').empty();
 });
 });
