@@ -18,6 +18,13 @@ $(document).ready(function(){
 		return this.href == url;
 	}).addClass('active');
 	
+	//https://gist.github.com/bastianallgeier/786bf00b9fa1262709f4
+	$('a').each(function() {
+  if(this.host !== window.location.host) {
+    $(this).attr('target', '_blank');
+  }
+});
+	
 	
     /*AJAX stuff.
      * Can't get the ajax loaded content to then respond to the javascript, even if preloaded in the head of the container document.
